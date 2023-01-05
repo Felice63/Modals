@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta name="author" content="Felice" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Create the original section that will be duplicated twice -->
+
+      <!-- Add the 'data-*' attributes to the section with class show-modal-->
+      <section
+        class="show-modal"
+        data-name="Project 1 details"
+        data-description="Dialog 1 element is open. More deatial about this project etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni deserunt minima voluptates maiores doloremque sunt atque vitae consectetur, quod aperiam ipsa saepe soluta pariatur commodi rerum
+        nihil deleniti."
+        data-img="img/img-1.jpg"
+      >
+        <img src="img/img-1.jpg" alt="" />
+        <cite>
+          <a
+            href="https://www.pexels.com/photo/person-s-hand-with-paints-1174932/"
+            >Alexander Grey / Pexels:</a
+          >
+        </cite>
+        <h2>Project 1</h2>
+      </section>
+
+      <!------- Second One -->
+
+      <!-- Add the 'data-*' attributes to the section with class show-modal-->
+      <section
+        class="show-modal"
+        data-name="Project 2 details"
+        data-description="Dialog 2 element is open. More deatial about this project etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni deserunt minima voluptates maiores doloremque sunt atque vitae consectetur, quod aperiam ipsa saepe soluta pariatur commodi rerum
+            nihil deleniti."
+        data-img="img/img-2.jpg"
+      >
+        <img src="img/img-2.jpg" alt="" />
+        <cite>
+          <a href="https://www.pexels.com/photo/painting-of-giraffe-3246665/">
+            Photo by Ekrulila / Pexels
+          </a>
+        </cite>
+        <h2>Project 2</h2>
+      </section>
+
+      <!------- Third One -->
+
+      <!-- Add the 'data-*' attributes to the section with class show-modal-->
+      <section
+        class="show-modal"
+        data-name="Project 3 details"
+        data-description="Dialog 3 element is open. More deatial about this project etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni deserunt minima voluptates maiores doloremque sunt atque vitae consectetur, quod aperiam ipsa saepe soluta pariatur commodi rerum
+            nihil deleniti."
+        data-img="img/img-3.jpg"
+      >
+        <img src="img/img-3.jpg" alt="" />
+        <cite>
+          <a
+            href="https://www.pexels.com/photo/blue-yellow-and-red-abstract-painting-1548110/"
+          >
+            Photo by Steve Johnson / Pexels
+          </a>
+        </cite>
+        <h2>Project 3</h2>
+      </section>
+
+      <!-- This dialog element will correspond to the first modal -->
+      <!-- NOTE the addition of the section with class 'addInfo' attribute. This will be cycled through in the script -->
+      <dialog class="modal">
+        <form method="dialog">
+          <button class="close-modal">&times;</button>
+        </form>
+        <section class="addInfo"></section>
+      </dialog>
+    </main>
+    <!--------------------------------------------->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
